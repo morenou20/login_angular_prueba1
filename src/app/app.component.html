@@ -1,0 +1,20 @@
+<div class="m-0 vh-100 row justify-content-center align-items-center">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="container-sm w-25">
+      <div class="form-floating mb-3">
+        <input formControlName="usu" class="form-control" id="floatingInput" [class.is-invalid]="validForm.usu.errors && validForm.usu.touched" placeholder="name@example.com" type="email">
+        <label for="floatingInput">alumno@duocuc.cl</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input formControlName="pass" class="form-control" id="floatingPassword" [class.is-invalid]="validForm.pass.errors && validForm.pass.touched" placeholder="Password" type="password">
+        <label for="floatingPassword">contraseña</label>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary w-100 h-auto">Ingresar</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-link w-100 h-auto">Olvidaste tu contraseña?</button>
+      </div>
+    </div>
+  </form>
+</div>
